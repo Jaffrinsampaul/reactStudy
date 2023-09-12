@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p,
+h6,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+;
+
+.hiddenScrollBar {
+  overflow-y: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.hiddenScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hiddenScrollBar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.pizza1 {
+  animation-name: pizza1ex;
+  animation-duration: 6s;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes pizza1ex {
+  0% {
+    left: 80%;
+    top: 0px;
+    opacity: 5%;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pizza2 {
+  animation-name: pizza2ex;
+  animation-duration: 6s;
+  /* animation-iteration-count: infinite; */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes pizza2ex {
+  0% {
+    left: 35%;
+    top: 0px;
+    opacity: 5%;
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.title {
+  animation-name: titleAnimation;
+  animation-duration: 6s;
+}
+
+@keyframes titleAnimation {
+  0% {
+    left: 35%;
+    top: 5%;
+    opacity: 5%;
+  }
+
+  100% {
+    left: 10%;
+    top: 5%;
+  }
+}
+
+.order{
+  animation-name: orderAnimation;
+  animation-duration: 6s;
+  /* animation-iteration-count: infinite; */
+}
+@keyframes orderAnimation {
+  0% {
+    left: -80%;
+    top: 0;
+    opacity: 5%;
+  }
+
+  100% {
+    left: 0%;
+    top: 0;
   }
 }
