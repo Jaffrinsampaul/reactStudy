@@ -8,21 +8,24 @@ import Home from './Pages/Pizzatime/Home';
 import About from './Pages/Pizzatime/About';
 import Blog from './Pages/Pizzatime/Blog';
 import Contact from './Pages/Pizzatime/Contact';
+import Navigation from './Containers/Navigation/Navigation';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='' element={<StudyCom1 />} />
-        <Route path='/pizza' element={<PizzaTime />} >
-          <Route path='menu' element={<Menu />} />
-          <Route path='' element={<Home />} />
-          <Route path='about' element={<About />} />
-          <Route path='blog' element={<Blog />} />
-          <Route path='contact' element={<Contact />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path='' element={<StudyCom1 />} />
+    //     <Route path='/pizza' element={<PizzaTime />} >
+    //       <Route path='menu' element={<Menu />} />
+    //       <Route path='' element={<Home />} />
+    //       <Route path='about' element={<About />} />
+    //       <Route path='blog' element={<Blog />} />
+    //       <Route path='contact' element={<Contact />} />
+    //     </Route>
+    //   </Routes>
+    // </BrowserRouter>
+
+    <Navigation />
   );
 }
 
