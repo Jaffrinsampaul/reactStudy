@@ -1,4 +1,6 @@
-import { welcomeDescription } from "../../Utils/hardCode";
+// import { welcomeDescription } from "../../Utils/hardCode";
+
+import { welcomeDescription } from "../../../Utils/hardCode";
 
 const WelcomeMsg =()=>{
   return(
